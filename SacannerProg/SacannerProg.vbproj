@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{286A0B65-5972-4896-8782-8671716DE039}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SacannerProg.My.MyApplication</StartupObject>
+    <RootNamespace>SacannerProg</RootNamespace>
+    <AssemblyName>SacannerProg</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SacannerProg.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SacannerProg.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EZTwainLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=47606df01f5c9af9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\EZTwainLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClinicForms\DataB.vb" />
+    <Compile Include="ClinicForms\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicForms\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClinicForms\Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicForms\Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClinicForms\FrmAboutUs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClinicForms\FrmCashier.Designer.vb">
+      <DependentUpon>FrmCashier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicForms\FrmCashier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClinicForms\FrmChangePassword.designer.vb">
+      <DependentUpon>FrmChangePassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicForms\FrmChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClinicForms\FrmDisplayImages.Designer.vb">
+      <DependentUpon>FrmDisplayImages.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicForms\FrmDisplayImages.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClinicForms\FrmFamilyChooice.designer.vb">
+      <DependentUpon>FrmFamilyChooice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicForms\FrmFamilyChooice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClinicForms\FrmFindEmp.designer.vb">
+      <DependentUpon>FrmFindEmp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicForms\FrmFindEmp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClinicForms\FrmLogin.designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicForms\FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClinicForms\FrmPatient.Designer.vb">
+      <DependentUpon>FrmPatient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicForms\FrmPatient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClinicForms\FrmProScanner.Designer.vb">
+      <DependentUpon>FrmProScanner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicForms\FrmProScanner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClinicForms\FrmRelatePatient.Designer.vb">
+      <DependentUpon>FrmRelatePatient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicForms\FrmRelatePatient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClinicForms\FrmRepFinds.Designer.vb">
+      <DependentUpon>FrmRepFinds.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicForms\FrmRepFinds.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClinicForms\FrmScannFile.Designer.vb">
+      <DependentUpon>FrmScannFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicForms\FrmScannFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClinicForms\FrmTypeDrugs.Designer.vb">
+      <DependentUpon>FrmTypeDrugs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicForms\FrmTypeDrugs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClinicForms\MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicForms\MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClinicForms\SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicForms\SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBHRMSDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBHRMSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DriveInfo.vb" />
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRepPreview.designer.vb">
+      <DependentUpon>FrmRepPreview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRepPreview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="TwainOperations.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleBarCode.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MyClassConDB.vb" />
+    <Compile Include="ResizeControls.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ClinicForms\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClinicForms\Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClinicForms\FrmAboutUs.resx">
+      <DependentUpon>FrmAboutUs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClinicForms\FrmCashier.resx">
+      <DependentUpon>FrmCashier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClinicForms\FrmChangePassword.resx">
+      <DependentUpon>FrmChangePassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClinicForms\FrmDisplayImages.resx">
+      <DependentUpon>FrmDisplayImages.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClinicForms\FrmFamilyChooice.resx">
+      <DependentUpon>FrmFamilyChooice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClinicForms\FrmFindEmp.resx">
+      <DependentUpon>FrmFindEmp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClinicForms\FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClinicForms\FrmPatient.resx">
+      <DependentUpon>FrmPatient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClinicForms\FrmProScanner.resx">
+      <DependentUpon>FrmProScanner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClinicForms\FrmRelatePatient.resx">
+      <DependentUpon>FrmRelatePatient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClinicForms\FrmRepFinds.resx">
+      <DependentUpon>FrmRepFinds.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClinicForms\FrmScannFile.resx">
+      <DependentUpon>FrmScannFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClinicForms\FrmTypeDrugs.resx">
+      <DependentUpon>FrmTypeDrugs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClinicForms\MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClinicForms\Reports\RepMedicen.rdlc" />
+    <EmbeddedResource Include="ClinicForms\SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRepPreview.resx">
+      <DependentUpon>FrmRepPreview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DBHRMSDataSet.xsc">
+      <DependentUpon>DBHRMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBHRMSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBHRMSDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBHRMSDataSet.xss">
+      <DependentUpon>DBHRMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
